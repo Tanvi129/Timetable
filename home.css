@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_image{
+    padding-left: 50px;
+    align-items: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th{
+    background-color: lightgreen;
+}
+
+
+
+td:hover {background-color: coral;}
+
+td.no-hover {
+    background-color: initial; /* Or any other background color you want for excluded cells */
+}
+
+.set_1{
+    background-color: lightblue;
+}
+
+.set_2{
+    background-color: lightgoldenrodyellow;
+}
+
+.backgrey{
+    background-color: grey;
+}
+

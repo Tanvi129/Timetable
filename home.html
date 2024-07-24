@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="section">
+            <h1>भारतीय सूचना प्रौद्योगिकी संस्थान सेनापति, मणिपुर</h1>
+            <h1>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY SENAPATI, MANIPUR</h1>
+            <h2> Class Time Table for III, V, VII Semesters, July-Nov 2024 Session, AY 2024-25</h2>
+        </div>
+        <div class="section_image">
+            <img src="iiitm_logo.png" alt="IITM Logo">
+        </div>
+    </div>
+    <hr>
+
+    <table id="myTable">
+        <!-- MONDAY -->
+        <tr>
+            <th>DAYS</th>
+            <th>SEM</th>
+            <th>Section</th>
+            <th>Room Number</th>
+            <th>09:00 - 09:55</th>
+            <th>09:55 - 10:15</th>
+            <th>10:15 - 11:10</th>
+            <th>11:10 - 12:10</th>
+            <th>12:15 - 13:10</th>
+            <th>13:15 - 14:10</th>
+            <th>14:15 - 15:10</th>
+            <th>15:15 - 16:10</th>
+            <th>16:15 - 17:10</th>
+        </tr>
+        <tr class="set_1">
+            <td rowspan="10" class="no-hover" style="background-color: white;">MONDAY</td>
+            <td rowspan="4" class="no-hover">SEM III</td>
+            <td class="no-hover">A</td>
+            <td class="no-hover">R-5</td>
+            <td>CS2015</td>
+            <td rowspan="10" class="no-hover" style="background-color: lightgray;"></td>
+            <td>CS2014</td>
+            <td>MA2013</td>
+            <td>EC2031</td>
+            <td>Lunch</td>
+            <td colspan="2">EC2131</td>
+            <td></td>
+        </tr>
+        <tr class="set_1">
+            <td class="no-hover">B</td>
+            <td class="no-hover">R-6</td>
+            <td>MA2013</td>
+            <td>EC2031</td>
+            <td>EC2071</td>
+            <td>CS2013</td>
+            <td>Lunch</td> 
+            <td>CS2014</td>
+            <td>CS2015</td>
+            <td></td>
+        </tr>
+        <tr class="set_1">
+            <td class="no-hover">C</td>
+            <td class="no-hover">R-7</td>
+            <td>EC2022</td>
+            <td colspan="2">EC2122</td>
+            <td>Lunch</td>
+            <td>EC2021</td>
+            <td>CS2013</td>
+            <td>EC2031</td>
+            <td></td>
+        </tr>
+        <tr class="set_1">
+            <td class="no-hover">D</td>
+            <td class="no-hover">R-8</td>
+            <td>EC2021</td>
+            <td colspan="2">CS2113</td>
+            <td>Lunch</td>
+            <td>EC2031</td>
+            <td>EC2022</td>
+            <td>EC2071</td>
+            <td>MA2013</td>
+        </tr>
+        <tr class="set_2">
+            <td rowspan="4" class="no-hover">SEM V</td>
+            <td class="no-hover">A</td>
+            <td class="no-hover">R-7</td>
+            <td></td>
+            <td>CS3055</td>
+            <td>OE3045/ OE3072</td>
+            <td>CS3032</td>
+            <td>Lunch</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="set_2">
+            <td class="no-hover">B</td>
+            <td class="no-hover">R-8</td>
+            <td></td>
+            <td>CS3081</td>
+            <td>HS3094</td>
+            <td>CS3055</td>
+            <td>Lunch</td> 
+            <td colspan="2">CS3044</td>
+            <td></td>
+        </tr>
+        <tr class="set_2">
+            <td class="no-hover">C</td>
+            <td class="no-hover">R-4</td>
+            <td>EC3044</td>
+            <td colspan="2">EC3152</td>
+            <td>Lunch</td>
+            <td></td>
+            <td>EC3081</td>
+            <td>HS3094</td>
+            <td>EC3051</td>
+        </tr>
+        <tr class="set_2">
+            <td class="no-hover">D</td>
+            <td class="no-hover">R-4</td>
+            <td></td>
+            <td>EC3152</td>
+            <td></td>
+            <td>HS3094</td>
+            <td>Lunch</td>
+            <td></td>
+            <td></td>
+            <td>OE3051  (R-5)</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="no-hover">SEM VII</td>
+            <td class="no-hover">ECE</td>
+            <td class="no-hover">Lab</td>
+            <td>EC481</td>
+            <td>EC401</td>
+            <td>EC473</td>
+            <td>Lunch</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no-hover">CSE</td>
+            <td class="no-hover">H 9</td>
+            <td>CS401</td>
+            <td>OE474/OE472</td>
+            <td>CS402</td>
+            <td>Lunch</td>
+            <td>CS472</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+       <!-- TUESDAY --> 
+    </table>
+
+    <script>
+        // JavaScript to change background color based on cell value
+        var table = document.getElementById('myTable');
+        var cells = table.getElementsByTagName('td');
+      
+        for (var i = 0; i < cells.length; i++) {
+          var cell = cells[i];
+          var cellValue = cell.textContent;
+      
+          if (cellValue == "Lunch") {
+            cell.style.backgroundColor = 'lightcoral';
+          }
+        }
+      </script>
+      
+</body>
+
+</html>
